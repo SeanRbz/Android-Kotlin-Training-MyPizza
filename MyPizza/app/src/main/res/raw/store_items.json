@@ -1,0 +1,31 @@
+[
+  {
+    "items": [
+      {
+        "id": 1,
+        "name": "Hawaiian  Pizza",
+        "price": 250.00
+      },
+      {
+        "id": 2,
+        "name": "Bacon Pizza",
+        "price": 150.00
+      },
+      {
+        "id": 3,
+        "name": "Pepperoni Pizza",
+        "price": 150.00
+      },
+      {
+        "id": 4,
+        "name": "Ham and Cheese Pizza",
+        "price": 150.00
+      },
+      {
+        "id": 4,
+        "name": "Mozzarella Pizza",
+        "price": 150.00
+      }
+    ]
+  }
+]

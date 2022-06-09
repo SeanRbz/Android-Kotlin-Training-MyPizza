@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/app_nav"
+    app:startDestination="@id/MainLandingPage">
+
+    <fragment
+        android:id="@+id/MainLandingPage"
+        android:name="com.example.mypizza.view.ui.MainLandingPage">
+
+        <action
+            android:id="@+id/MainLandingPage_to_CustomerLoginPage"
+            app:destination="@+id/CustomerLoginPage" />
+
+        <action
+            android:id="@+id/MainLandingPage_to_StoreLandingPage"
+            app:destination="@+id/StoreLandingPage" />
+    </fragment>
+
+
+    <dialog
+        android:id="@+id/StoreAddItems"
+        android:name="com.example.mypizza.view.ui.store.StoreCreateItems" />
+    <fragment
+        android:id="@+id/StoreLandingPage"
+        android:name="com.example.mypizza.view.ui.store.StoreLandingPage">
+
+        <action
+            android:id="@+id/StoreLandingPage_to_StoreAddItems"
+            app:destination="@+id/StoreAddItems" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/CustomerLoginPage"
+        android:name="com.example.mypizza.view.ui.customer.CustomerLoginPage">
+
+        <action
+            android:id="@+id/CustomerLoginPage_to_CustomerLandingPage"
+            app:destination="@+id/CustomerLandingPage" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/CustomerLandingPage"
+        android:name="com.example.mypizza.view.ui.customer.CustomerLandingPage">
+
+    </fragment>
+
+</navigation>
